@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ramez Abdullah - Software Developer specializing in backend development, PHP, MySQL, Python and web applications.">
+<title>Ramez Abdullah | Software Developer</title>
+<style>
+:root {
+  --bg: #080d19;
+  --card: #111b2e;
+  --text: #eaf1ff;
+  --muted: #a7b5cc;
+  --accent: #38bdf8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #0b1323;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--accent);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover { color: var(--accent); }
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background: radial-gradient(circle at top right,#123c60,#080d19 65%);
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 65px);
+  margin: 10px 0;
+}
+.hero h1 span { color: var(--accent); }
+.hero h2 { color: var(--muted); }
+.hero p { max-width: 700px; }
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px 10px 10px 0;
+  background: var(--accent);
+  color: #07111e;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+section {
+  padding: 75px 8%;
+  max-width: 1250px;
+  margin: auto;
+}
+section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+section h2 span { color: var(--accent); }
+p { color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 22px;
+}
+.card {
+  background: var(--card);
+  padding: 25px;
+  border: 1px solid #20324d;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+.card h3 { color: white; }
+.tag {
+  display: inline-block;
+  background: #17334a;
+  color: #7dd3fc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 13px;
+}
+.date { color: var(--accent); }
+a { color: var(--accent); }
+footer {
+  background: #0b1323;
+  text-align: center;
+  padding: 25px;
+}
+@media(max-width:600px) {
+  nav { padding: 20px 5%; }
+  nav a { margin: 5px; font-size: 13px; }
+  .hero { padding: 60px 6%; }
+  section { padding: 55px 6%; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Ramez.dev</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <p>WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span>Ramez Abdullah</span></h1>
+    <h2>Software Developer | Backend Development</h2>
+    <p>
+      I develop reliable, efficient, and user-focused
+      software solutions. My experience includes
+      web application development, database management,
+      business systems, and technical problem-solving.
+    </p>
+    <a class="btn" href="#projects">Explore My Work</a>
+    <a class="btn secondary" href="#contact">Contact Me</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <p>
+    I'm a Software Developer based in Aqaba, Jordan,
+    with hands-on experience designing, developing,
+    maintaining, and improving web applications
+    and database-driven business systems.
+  </p>
+  <p>
+    My technical background includes PHP, MySQL,
+    SQL, Python, Java, C++, HTML, CSS, and JavaScript.
+    I have practical experience in backend development,
+    relational database design, software troubleshooting,
+    application testing, and technical support.
+  </p>
+  <p>
+    I enjoy transforming business requirements into
+    practical software solutions, improving system
+    functionality, and continuously developing my skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical <span>Skills</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Programming Languages</h3>
+      <span class="tag">PHP</span>
+      <span class="tag">Python</span>
+      <span class="tag">Java</span>
+      <span class="tag">C++</span>
+      <span class="tag">SQL</span>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Backend Development</span>
+      <span class="tag">PHP PDO</span>
+    </div>
+    <div class="card">
+      <h3>Databases & Tools</h3>
+      <span class="tag">MySQL</span>
+      <span class="tag">Database Design</span>
+      <span class="tag">XAMPP</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">CSV Reporting</span>
+    </div>
+    <div class="card">
+      <h3>Additional Expertise</h3>
+      <span class="tag">Technical Support</span>
+      <span class="tag">Troubleshooting</span>
+      <span class="tag">Software Testing</span>
+      <span class="tag">Problem Solving</span>
+      <span class="tag">Agile Methodology</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured <span>Projects</span></h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Smart Cart</h3>
+      <p class="date">
+        Driver Operations & Financial Management System
+      </p>
+      <p>
+        Designed and developed a web-based management
+        system supporting driver operations,
+        employee administration, financial monitoring,
+        and business reporting.
+      </p>
+      <p>
+        Key features include employee login,
+        administrator and staff roles,
+        driver records, attendance tracking,
+        revenue and insurance calculations,
+        monthly summaries, and CSV exports.
+      </p>
+      <span class="tag">PHP</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">PDO</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+    </div>
+
+    <div class="card">
+      <h3>SilentWords</h3>
+      <p class="date">Graduation Project</p>
+      <p>
+        Collaborated on developing an application
+        designed to help people with disabilities
+        communicate more effectively.
+      </p>
+      <p>
+        The project received an evaluation
+        of 89/100.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+    </div>
+
+  </div>
+
+  <p style="margin-top:30px">
+    Explore more of my development work on
+    <a href="https://github.com/ramezabdallah33-maker"
+       target="_blank" rel="noopener noreferrer">
+      GitHub
+    </a>.
+  </p>
+</section>
+
+<section id="experience">
+  <h2>Professional <span>Experience</span></h2>
+
+  <div class="card">
+    <h3>Junior Software Developer & Technical Support Specialist</h3>
+    <p class="date">Smart Cart | Aqaba, Jordan | Jul 2026 – Present</p>
+    <p>
+      Developed and maintained web-based business
+      management systems using PHP and MySQL.
+      Implemented new features, resolved software
+      issues, improved application performance,
+      and provided technical assistance to users.
+    </p>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <h3>Customer Service & Technical Support Employee</h3>
+    <p class="date">
+      Crystal Customer Service Company | Oct 2023 – Oct 2024
+    </p>
+    <p>
+      Delivered first-line IT support, handled
+      account recovery and password resets,
+      documented incidents, and resolved
+      customer technical inquiries.
+    </p>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <h3>Sales Representative</h3>
+    <p class="date">
+      Care Company | Nov 2020 – Nov 2022
+    </p>
+    <p>
+      Tracked customer orders and inventory
+      using CRM systems and Microsoft Excel,
+      and prepared weekly sales reports.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education & <span>Training</span></h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Bachelor's Degree in Software Engineering</h3>
+      <p>Al-Hussein Bin Talal University</p>
+      <p>February 2026</p>
+    </div>
+
+    <div class="card">
+      <h3>Diploma in Network & Information Security</h3>
+      <p>Al-Balqa Applied University</p>
+      <p>November 2022</p>
+    </div>
+
+    <div class="card">
+      <h3>Professional Training</h3>
+      <p>
+        Quality Assurance Techniques,
+        Technical Training at ASEZA,
+        C++ Programming,
+        Excel Dashboard Development,
+        and Professional Skills Training.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's <span>Connect</span></h2>
+
+  <p>
+    Interested in collaborating, discussing
+    software development opportunities,
+    or learning more about my work?
+    Feel free to reach out.
+  </p>
+
+  <p>📍 Aqaba, Jordan</p>
+
+  <p>
+    📧
+    <a href="mailto:ramezabdallah33@gmail.com">
+      ramezabdallah33@gmail.com
+    </a>
+  </p>
+
+  <p>
+    💻
+    <a href="https://github.com/ramezabdallah33-maker"
+       target="_blank" rel="noopener noreferrer">
+      GitHub Profile
+    </a>
+  </p>
+
+  <p>
+    🔗
+    <a href="https://www.linkedin.com/in/ramez-abdallah"
+       target="_blank" rel="noopener noreferrer">
+      LinkedIn Profile
+    </a>
+  </p>
+
+  <a class="btn"
+     href="mailto:ramezabdallah33@gmail.com">
+    Hire Me
+  </a>
+
+</section>
+
+<footer>
+  <p>© 2026 Ramez Abdullah. All Rights Reserved.</p>
+  <p>Designed & Developed by Ramez Abdullah</p>
+</footer>
+
+</body>
+</html>
